@@ -49,3 +49,24 @@ console.log(typeof anotherId);
 //        Arrays  =>  object
 //        Function  =>  function
 //        Object  =>  object
+
+
+// two types of memory -> stack (primitive -> we get the copy in which changes are done) and heap (Non-primitive -> changes are done in the original one)
+
+let myinsta = "garg_nitin20"
+let anotherinsta = myinsta
+anotherinsta = "ngarg20"
+
+console.log(anotherinsta);
+console.log(myinsta);
+
+let userone = {
+    email : "ngarg20.com",
+    name : "nitin"
+}
+let userTwo = userone;
+userTwo.email = "ngarg0668.com"
+console.log(userTwo);
+console.log(userone.email)
+
+
